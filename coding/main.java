@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] myNum = new int[5];
+        int[] n = new int[5];
         System.out.println("Please Enter The 5 Grades, one at a time:");
         for (int i = 0; i < 5; i++) {
             boolean resume = true;
@@ -15,7 +15,7 @@ public class Main {
                     if (input < 0 || input > 100) {
                         throw new InputMismatchException("Grade must be between 0 and 100.");
                     }
-                    myNum[i] = input;
+                    n[i] = input;
                     resume = false;
                 } catch (InputMismatchException err) {
                     System.out.println("Invalid input. Please enter a valid number between 0 and 100.");
@@ -26,8 +26,10 @@ public class Main {
             }
         }
         scanner.close();
+        //int avg = Average Function (n)
+        //Grade Function (avg)
         System.out.println("The Grades Are: ");
-        for (int num : myNum) {
+        for (int num : n) {
             System.out.print(num + " ");
         }
         System.out.println();
