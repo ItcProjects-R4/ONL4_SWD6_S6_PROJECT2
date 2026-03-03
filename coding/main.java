@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
@@ -33,5 +34,6 @@ public class main {
         }
         System.out.println();
         System.out.println("The average of the grades is : " + avg + "/100");
+        System.out.println("The letter grade is : " + grading.grade(avg));
     }
 }
