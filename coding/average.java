@@ -1,4 +1,4 @@
-package com.mycompany.averageminiproject;
+package coding;
 
 public class Average {
 
