@@ -1,17 +1,17 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] n = new int[5];
+        double[] n = new double[5];
         System.out.println("Please Enter The 5 Grades, one at a time:");
         for (int i = 0; i < 5; i++) {
             boolean resume = true;
             while (resume) {
                 System.out.print("Grade " + (i + 1) + ": ");
                 try {
-                    int input = scanner.nextInt();
+                    double input = scanner.nextDouble();
                     if (input < 0 || input > 100) {
                         throw new InputMismatchException("Grade must be between 0 and 100.");
                     }
@@ -26,12 +26,12 @@ public class Main {
             }
         }
         scanner.close();
-        //int avg = Average Function (n)
-        //Grade Function (avg)
+        double avg = Average.calculate(n);
         System.out.println("The Grades Are: ");
-        for (int num : n) {
+        for (double num : n) {
             System.out.print(num + " ");
         }
         System.out.println();
+        System.out.println("The average of the grades is : " + avg + "/100");
     }
 }
