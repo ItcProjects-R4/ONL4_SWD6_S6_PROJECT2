@@ -1,5 +1,5 @@
 
-public class Average {
+public class average {
 
     public static double calculate(double[] grade) {
 

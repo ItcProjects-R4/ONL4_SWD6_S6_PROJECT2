@@ -26,7 +26,7 @@ public class main {
             }
         }
         scanner.close();
-        double avg = Average.calculate(n);
+        double avg = average.calculate(n);
         System.out.println("The Grades Are: ");
         for (double num : n) {
             System.out.print(num + " ");
