@@ -28,12 +28,13 @@ public class main {
         }
         scanner.close();
         double avg = average.calculate(n);
+        double letterGrade = grading.grade(avg);
         System.out.println("The Grades Are: ");
         for (double num : n) {
             System.out.print(num + " ");
         }
         System.out.println();
         System.out.println("The average of the grades is : " + avg + "/100");
-        System.out.println("The letter grade is : " + grading.grade(avg));
+        System.out.println("The letter grade is : " + letterGrade);
     }
 }
