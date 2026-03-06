@@ -28,7 +28,7 @@ public class main {
         }
         scanner.close();
         double avg = average.calculate(n);
-        double letterGrade = grading.grade(avg);
+        String letterGrade = grading.grade(avg);
         System.out.println("The Grades Are: ");
         for (double num : n) {
             System.out.print(num + " ");
